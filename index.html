@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="en">
+<head>
+	<title>Javascript calculator</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="cal">
+	<h1>Calculator</h1>
+	<p>Make your calculations here</p>
+    <form name="calculator">
+	     <input type="text"  name="answer" disabled></input>
+	     <div class="btn">
+	     <input type="button" value="1" name="btn1" onclick="display(btn1.value)"></input>
+	     <input type="button" value="2" name="btn2" onclick="display(btn2.value)"></input>
+	     <input type="button" value="3" name="btn3" onclick="display(btn3.value)"></input>
+	     <input type="button" value="+" name="btnadd" onclick="display(btnadd.value)"></input><br>
+
+	     <input type="button" value="4" name="btn4" onclick="display(btn4.value)">
+	     <input type="button" value="5" name="btn5" onclick="display(btn5.value)"></input>
+	     <input type="button" value="6" name="btn6" onclick="display(btn6.value)"></input>
+	     <input type="button" value="-" name="btnsub" onclick="display(btnsub.value)"></input><br>
+
+	     <input type="button" value="7" name="btn7" onclick="display(btn7.value)"></input>
+	     <input type="button" value="8" name="btn8" onclick="display(btn8.value)" ></input>
+	     <input type="button" value="9" name="btn9" onclick="display(btn9.value)"></input>
+	     <input type="button" value="*" name="btnmult" onclick="display(btnmult.value)"></input><br>
+
+
+	     <input type="button" value="C" name="btnc" onclick="btnclear()"></input>
+	     <input type="button" value="0" name="btnzero" onclick="display(btnzero.value)"></input>
+	     <input type="button" value="=" name="btnequal" onclick="answer.value=eval(answer.value)"></input>
+     <!-- The eval() function evaluates or executes an argument.
+If the argument is an expression, eval() evaluates the expression. If the argument is one or more JavaScript statements, eval() executes the statements -->
+     <input type="button"  value="/" name="btndiv" onclick="display(btndiv.value)"></input><br>
+
+     <input type="button"  value="Del" name="btndel" onclick="btndelete()"></input>
+     <input type="button"  value="."   name="btndot" onclick="display(btndot.value)"></input>
+     <input type="button"  value="%"   name="btnmod" onclick="display(btnmod.value)"></input>
+     <input type="button"  value="&radic;" name="btnsqrt" onclick="square(btnsqrt.value)"></input>
+     
+    </div> 
+ </form>
+ </div>
+     
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
